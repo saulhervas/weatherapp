@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Clima de la Ciudad</h1>
+        <form method="post">
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+            <button type="submit">Obtener Clima</button>
+        </form>
+
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% elif clima %}
+            <div class="resultado">
+                <h2>{{ clima['name'] }}, {{ clima['sys']['country'] }}</h2>
+                <p><strong>Temperatura:</strong> {{ clima['main']['temp'] }}°C</p>
+                <p><strong>Descripción:</strong> {{ clima['weather'][0]['description']|capitalize }}</p>
+                <p><strong>Humedad:</strong> {{ clima['main']['humidity'] }}%</p>
+                <p><strong>Viento:</strong> {{ clima['wind']['speed'] }} m/s</p>
+                <!-- Mostrar el icono del clima -->
+                <img src="{{ clima['icon_url'] }}" alt="Icono del clima">
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

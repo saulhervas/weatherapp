@@ -32,3 +32,8 @@ Para ejecutar este proyecto, necesitarás tener instalados:
    ```bash
    git clone https://github.com/tu-usuario/clima-app.git
    cd clima-app
+2. **Instalar las dependencias**
+   Asegúrate de tener pip instalado y luego instala las dependencias necesarias:
+   ```bash
+   pip install -r requirements.txt
+   

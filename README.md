@@ -36,4 +36,13 @@ Para ejecutar este proyecto, necesitarás tener instalados:
    Asegúrate de tener pip instalado y luego instala las dependencias necesarias:
    ```bash
    pip install -r requirements.txt
-   
+3. **Configurar la clave de la API**
+   Regístrate en la API de WeatherAPI (o la API que estés utilizando) y consigue una clave de API. Luego, crea un archivo .env en la raíz de tu proyecto y agrega tu clave de la siguiente forma:
+   ```bash
+   API_KEY=tu_clave_de_api
+4. **Ejecutar la aplicación**
+   Una vez que todo esté configurado, puedes ejecutar el servidor Flask con el siguiente comando:
+   ```bash
+   python app.py
+
+Esto iniciará el servidor localmente en http://127.0.0.1:5000/. Abre ese enlace en tu navegador para ver la aplicación en funcionamiento.

@@ -46,3 +46,20 @@ Para ejecutar este proyecto, necesitarás tener instalados:
    python app.py
 
 Esto iniciará el servidor localmente en http://127.0.0.1:5000/. Abre ese enlace en tu navegador para ver la aplicación en funcionamiento.
+
+## Uso
+Abre la aplicación en tu navegador.
+Ingresa el nombre de una ciudad en el campo de texto.
+Haz clic en "Obtener clima".
+La aplicación mostrará el clima actual de la ciudad ingresada con la temperatura, descripción y un icono del clima.
+
+## Contribuciones
+¡Las contribuciones son bienvenidas! Si tienes alguna mejora o sugerencia, por favor abre un issue o crea un pull request.
+
+
+
+
+
+
+
+
